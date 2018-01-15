@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Bungee+Inline|Megrim|Dosis|Roboto|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu|Bungee+Inline|Megrim|Great+Vibes|Roboto|Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -17,43 +17,86 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="col-md-3 side_nav">
-                    <div class="header">
-                        <h3>Georgiana de Ros</h3>
-                    </div>
-                    <!-- tabs -->
-                    <div class="tabbable tabs-left">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-                            <li><a href="#prayer_book" data-toggle="tab">Wellington's Prayer Book</a></li>
-                            <li><a href="#waistcoat" data-toggle="tab">Wellington's Waistcoat</a></li>
-                            <li><a href="#letters" data-toggle="tab">Letters from Wellington</a></li>
-                            <li><a href="#boars_tail" data-toggle="tab">The Boar's Tail</a></li>
-                            <li><a href="#dukes_hair" data-toggle="tab">The Duke's Hair</a></li>
-                            <li><a href="#miguel" data-toggle="tab">General Miguel de Álava</a></li>
-                            <li><a href="#napoleon" data-toggle="tab">Napoleons Ancho</a></li>
-                            <li><a href="#portraits" data-toggle="tab">Portraits &amp; Prints</a></li>
-                            <li><a href="#silver_dishes" data-toggle="tab">Silver Entree Dishes</a></li>
-                            <li><a href="#scissors" data-toggle="tab">The Duke's Scissors</a></li>
-                            <li><a href="#mourning" data-toggle="tab">Mourning Pin</a></li>
-                            <li><a href="#sale" data-toggle="tab">Items for Sale</a></li>
-                            <li><a href="#book" data-toggle="tab">Book</a></li>
-                            <li><a href="#contact" data-toggle="tab">Contact</a></li>
-
-                        </ul>
+            <!--menu for large screens-->
+                <div class="desktop">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 side_nav">
+                            <div class="header">
+                                    <h3>Georgiana de Ros</h3>
+                                </div>
+                                <!-- tabs -->
+                                <div class="tabbable tabs-left">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+                                        <li><a data-toggle="tab" href="#prayer_book" >Wellington's Prayer Book</a></li>
+                                        <li><a data-toggle="tab" href="#waistcoat">Wellington's Waistcoat</a></li>
+                                        <li><a href="#letters" data-toggle="tab">Letters from Wellington</a></li>
+                                        <li><a href="#boars_tail" data-toggle="tab">The Boar's Tail</a></li>
+                                        <li><a href="#dukes_hair" data-toggle="tab">The Duke's Hair</a></li>
+                                        <li><a href="#miguel" data-toggle="tab">General Miguel de Álava</a></li>
+                                        <li><a href="#napoleon" data-toggle="tab">Napoleon's Anchor</a></li>
+                                        <li><a href="#portraits" data-toggle="tab">Portraits &amp; Prints</a></li>
+                                        <li><a href="#silver_dishes" data-toggle="tab">Silver Entree Dishes</a></li>
+                                        <li><a href="#scissors" data-toggle="tab">The Duke's Scissors</a></li>
+                                        <li><a href="#mourning" data-toggle="tab">Mourning Pin</a></li>
+                                        <li><a href="#sale" data-toggle="tab">Items for Sale</a></li>
+                                        <li><a href="#book" data-toggle="tab">Book</a></li>
+                                        <li><a href="#contact" data-toggle="tab">Contact</a></li>
+            
+                                    </ul>
+                                </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-9">
+            <!--menu for small screens-->
+                <div class="mobile">
+                        <nav class="navbar navbar-default" role="navigation">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="index.html">Georgiana de Ros</a>
+                                </div>
+                          
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav"><!--change nav-tabs back to navbar-nav-->
+                                            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                                            <li><a href="#prayer_book" data-toggle="tab">Wellington's Prayer Book</a></li>
+                                            <li><a href="#waistcoat" data-toggle="tab">Wellington's Waistcoat</a></li>
+                                            <li><a href="#letters" data-toggle="tab">Letters from Wellington</a></li>
+                                            <li><a href="#boars_tail" data-toggle="tab">The Boar's Tail</a></li>
+                                            <li><a href="#dukes_hair" data-toggle="tab">The Duke's Hair</a></li>
+                                            <li><a href="#miguel" data-toggle="tab">General Miguel de Álava</a></li>
+                                            <li><a href="#napoleon" data-toggle="tab">Napoleons Anchor</a></li>
+                                            <li><a href="#portraits" data-toggle="tab">Portraits &amp; Prints</a></li>
+                                            <li><a href="#silver_dishes" data-toggle="tab">Silver Entree Dishes</a></li>
+                                            <li><a href="#scissors" data-toggle="tab">The Duke's Scissors</a></li>
+                                            <li><a href="#mourning" data-toggle="tab">Mourning Pin</a></li>
+                                            <li><a href="#sale" data-toggle="tab">Items for Sale</a></li>
+                                            <li><a href="#book" data-toggle="tab">Book</a></li>
+                                            <li><a href="#contact" data-toggle="tab">Contact</a></li>
+                                    </ul>
+                          
+                          
+                                </div>
+                          </nav>
+                </div>
+
+
+                <div class="col-md-8 content">
                     <div class="tab-content">
-                        <div class="tab-pane active" id="home">                
+                        <div class="tab-pane fade in active" id="home">                
                             <div class=" home_info">
                                     <img src="images/wellington_nav.png" alt="wellington picture"width="100px">
-                                    <div class="home_info_text"></div>
                                     <h1>Georgiana de Ros</h1>
+                                    
+                                    <img src="images/georgy_nav.png" alt="georgy picture" width="100px">
                                     <p>A small collection of memorabilia and ephemera connected with
                                             Arthur Wellesley, the first Duke of Wellington and Georgiana Lennox (de Ros)</p>
-                                    <img src="images/georgy_nav.png" alt="georgy picture" width="100px">
+                                    
                             </div>
                         </div> 
                         <div class="tab-pane" id="prayer_book">                
@@ -105,43 +148,107 @@
                     
                         <div class="tab-pane" id="waistcoat">                
                                 <div class=" home_info">
-                                        <img src="images/wellington_nav.png" alt="wellington picture"width="100px">
+                                        
                                         <div class="home_info_text"></div>
-                                        <h1>Georgiana de Ros</h1>
-                                        <p>A small collection of memorabilia and ephemera connected with
-                                                Arthur Wellesley, the first Duke of Wellington and Georgiana Lennox (de Ros)</p>
+                                        <h1>Wellingtons  Waist coat</h1>
+                                        <p>
+                                                
+                                               
+                                               The Duke's waistcoat has a short note attached in Georgy's handwriting  "The Duke,s waistcoat given to me for a pattern for one I worked for him."
+                                               
+                                               From the Dukes correspondence to Georgy it seems she sewed at least two waistcoats one around May  1836 and another in November 1837.
+                                               
+                                               Also shown in the photograph are a number of gilt buttons some still in their original package they were made  by G. Stulz Clifford Street and have a coronet and the Duke's Initials.</p>
                                         <img src="images/georgy_nav.png" alt="georgy picture" width="100px">
                                 </div>
                         </div> 
                     
                         <div class="tab-pane" id="letters">                
                                 <div class=" home_info">
-                                        <img src="images/wellington_nav.png" alt="wellington picture"width="100px">
+                                    
                                         <div class="home_info_text"></div>
-                                        <h1>Georgiana de Ros</h1>
-                                        <p>A small collection of memorabilia and ephemera connected with
-                                                Arthur Wellesley, the first Duke of Wellington and Georgiana Lennox (de Ros)</p>
-                                        <img src="images/georgy_nav.png" alt="georgy picture" width="100px">
+                                        <h1>The Wellington letters</h1>
+                                        <p>
+                                                
+                                               
+                                               This large collection of letters consisting of 140 in total are written to Georgiana Lennox   and after her marriage in 1824  to Lady de Ros.
+                                               
+                                               The earliest date is 28th June 1815 and the last is 25 th march 1850. Georgiana lived to the great age of 96 and obviously cherished the memories that these letters gave to her, I don’t think she ever let them out of her possession and her Daughter Blanche did not transcribe the letters until after her death.
+                                               
+                                               Georgy from a young age was immensely fond of the Duke and although the content of the letters seem very familiar for this period, there relationship was probably like that of a Father and Daughter. Sadly there are none of Georgy’s letters to the Duke that are known to exist, he was known to suggest destroying all personal correspondence, which he seems to have done, Clearly many of the Duke’s lady friends could not bring themselves to do this,
+                                               
+                                               There are large time spans in some of the letters which is perhaps because some were destroyed or they lived close to each other and the need to correspond was less.
+                                               
+                                               Strangely none of Georgy’s diaries are known to exist either, however Blanche did copy some of the entries and on hearing of the Duke’s death Georgy wrote: From childhood I loved and venerated him and invariably received the most un-remitting kindness from him and so many years of unclouded friendship cannot be given up without much suffering.
+                                               
+                                               Georgy’s husband William Fitzgerald de Ros was burdened with the immense responsibility of organising large parts of the funeral procession of the Duke.
+                                               
+                                               The content of the letters are mostly of a social nature and they discuss many of the activities and tricks  which The Duke and Georgy seemed to enjoy getting up to and they certainly show a different side to the man Known as The Iron Duke.
+                                               
+                                                [Paris Feb 1 1817 I gave a brilliant Ball on the 29th. It wanted you only to be perfect. I want you likewise for another reason. Between ourselves entirely we have been playing the finest trick ever yet performed: and it is unfortunate that so capital an actress as you should be absent on the occasion. We really quite surpassed ourselves and in the best possible way, the way which is my favourite one viz founding our scheme on a fiction invented and circulated by the person on whom the trick was played. We are not yet found out which is fortunate. As you say “it would be a pity if you or I were ever discovered as we are so very innocent”]
+                                               
+                                               The Duke also seems to have taken a very keen interest in Georgy’s suitors and referred to them as the enemy.                                                              
+                                               
+                                                 [Mont St Martin Nov 17th 1816 [We have had but bad hunting since you went; but the weather appears to be becoming more favourable and I hope for some sport tomorrow. I have not seen the enemy. I’ll try to get him to come over here for a day or two that I may know him a little.]        
+                                               
+                                                
+                                               
+                                               Which must have been quite frightening for those concerned, Lord Hotham in this case.
+                                               
+                                                
+                                               
+                                               [Paris Jan 3rd 1817 ; I have received your letter of the 27th and I hope soon to send you some poetry notwithstanding that there is less leisure for writing here than there was at the Abbaye. I hear that a terrible accident happened to the last poem.You are a little witch! You never told me that you had bewitched my secretary! He is going about very poorly! Then there is poor Percy too very poorly for Lady Elizabeth Conynham… I did not ask the soupirant to the Abbaye as he asked to go to Bruxelles.I have a very good opinion of him and wish that you like him. I don’t approve of you waiting for the Caprice of the enemy’s guardian.]
+                                               
+                                                
+                                               
+                                               She does seem to have had a closeness to Charles Greville the famous diarist and great friend of Henry Fitzgerald who was the elder brother of her future husband. Georgy in turn became very protective of the Duke re his affairs of the heart later in life as he was pursued by many hopeful ladies
+                                               
+                                                
+                                               
+                                               [Jan 14th 1838 you appear to be anxious about my travels in Staffordshire that I write you one line to tell you that I have evacuated that county in perfect safety! Not having seen or even heard of the enemy.]<img src="images/georgy_nav.png" alt="georgy picture" width="100px">
                                 </div>
                         </div> 
                         <div class="tab-pane" id="boars_tail">                
                                 <div class=" home_info">
-                                        <img src="images/wellington_nav.png" alt="wellington picture"width="100px">
+                            
                                         <div class="home_info_text"></div>
-                                        <h1>Georgiana de Ros</h1>
-                                        <p>A small collection of memorabilia and ephemera connected with
-                                                Arthur Wellesley, the first Duke of Wellington and Georgiana Lennox (de Ros)</p>
-                                        <img src="images/georgy_nav.png" alt="georgy picture" width="100px">
+                                        <h1>The Boars Tail</h1>
+                                        <p>
+                                                
+                                               
+                                                
+                                               
+                                               Georgys amusing story of  a Wild Boar hunt.
+                                               
+                                                
+                                               
+                                                " I used sometimes  to ride to cover when there was a boar-hunt and on the 30th october 1817 The Duke Of Wellington killed an enormous boar At Walencourt, of which Feat he was Prouder than of Waterloo! He was very anxious to show me the boar, and I was equally anxious not to see it and Sir George Murray helped me to avoid the unpleasent sight. The Boars Bristles were given to me, and were mounted for me by Lord Arthur Hill A.D.C. to the Duke, with an Inscription.
+                                               
+                                               Bristles of a wild boar 7 feet from nose to tail, 4 feet 2 inches in girth, length of head 19 inches: Killed by THE DUKE OF WELLINGTON at WALLENCOURT on 30 th Oct 1817, when I was out hunting with him.
+                                               
+                                               Georgiana Lennox
+                                               
+                                                
+                                               
+                                               The Handle is turned ebony with silver mounts and  an engraving of a hunting scene. The exact purpose of this item is not clear.<img src="images/georgy_nav.png" alt="georgy picture" width="100px">
                                 </div>
                         </div> 
                         <div class="tab-pane" id="dukes_hair">                
                                 <div class=" home_info">
-                                        <img src="images/wellington_nav.png" alt="wellington picture"width="100px">
+                                        
                                         <div class="home_info_text"></div>
-                                        <h1>Georgiana de Ros</h1>
-                                        <p>A small collection of memorabilia and ephemera connected with
-                                                Arthur Wellesley, the first Duke of Wellington and Georgiana Lennox (de Ros)</p>
-                                        <img src="images/georgy_nav.png" alt="georgy picture" width="100px">
+                                        <h1>The Duke's Hair</h1>
+                                        <p>
+                                                
+                                               
+                                               The collection consists of three lots of hair belonging to the Duke the first was sent to Georgy in a letter as shown not long after the battle of Waterloo and was very likely to have been on his head at the time of the battle and is the earliest example.
+                                               
+                                      
+                                               
+                                               The second piece has been woven into the top of a small cedar toothpick  box which has a small mirror. Inside is a note in Georgy's  hand  "Hair of Arthur The 1st Great Duke of Wellington.
+                                               
+                                                
+                                               The third piece was given to Georgy by Kendall , The Duke's  man servant ,Who after his passing immediately wrote two letters to Georgy informing her of the event, one to her london home and one to Strangford in case she was there. When they met in person shortly afterwards Kendall gave her an envelope with a small lock of the Duke's hair he is also supposed to have sent a piece to Queen Victoria.<img src="images/georgy_nav.png" alt="georgy picture" width="100px">
                                 </div>
                         </div> 
                         <div class="tab-pane" id="miguel">                
@@ -237,14 +344,14 @@
                 
                     </div>
                 </div>
-            </div>
+            
         </div>
     </div>
             
         
 
-    <script type="text/javascript" src="lib/js/jquery-3.2.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
