@@ -17,24 +17,20 @@
     .container{
         width: 100%;
     }
+    .container-fluid{
+        padding: 0;
+    }
 
+    .navbar-collapse {
+        padding-right: 0;
+    }
     .header {
         text-align: center;
     }
 
-    .header * {
-        display: inline-block;
-        padding: 10px;
-        color: rgb(128, 0, 32);
-    }
-
-    .side_nav {
-        box-shadow: 0 0 3px gray, 0 0 5px gray;
-        position: fixed;
-        height: 100vh;
-        background: url(../images/georgy1_nav.png) no-repeat;
-        background-size: cover;
-        
+    .header h1 {
+        font-size: 25px;
+        padding-bottom: 10px;
     }
 
     .mobile {
@@ -47,61 +43,30 @@
     .desktop {
         display: none !important;
     }
+    
 
 
-    .tabs-left > .nav-tabs {
-        border-bottom: 0;
-    }
-    
-    .tab-content > .tab-pane,
-    .pill-content > .pill-pane {
-        display: none;
-    }
-    
-    .tab-content > .active,
-    .pill-content > .active {
-        display: block;
-    }
-    
-    .tabs-left > .nav-tabs > li {
-        float: none;
-    }
-    
-    .tabs-left > .nav-tabs > li > a {
-        min-width: 74px;
-        margin-right: 0;
-        margin-bottom: 3px;
-    }
-    
-    .nav-tabs li {
-        border-radius: 10px 0px 0px 10px;
-    }
 
-    .nav-tabs li a {
+
+
+
+
+    .navbar-nav li a {
         border-radius: 0px;
         background-color: rgba(238,238,238, 0.8);
         color: black;
     }
 
-    .nav-tabs li a:hover {
+    .navbar-nav li a:hover {
         color: rgb(128, 0, 32);
         background-color: rgba(238,238,238, 1);
     }
+    .navbar-nav>li {
+        float: none;
+    }
   
-    
-    .tabs-left > .nav-tabs > li > a:hover,
-    .tabs-left > .nav-tabs > li > a:focus {
-        border-color: #eeeeee #dddddd #eeeeee #eeeeee;
-    }
-    
-    .tabs-left > .nav-tabs .active > a,
-    .tabs-left > .nav-tabs .active > a:hover,
-    .tabs-left > .nav-tabs .active > a:focus {
-        border-color: #ddd transparent #ddd #ddd;
-        *border-right-color: #ffffff;
-    }
 
-    .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    .navbar-nav >li.active>a, .navbar-nav >li.active>a:hover, .navbar-nav >li.active>a:focus {
         color: #555555;
         background-color: white;
 
@@ -109,23 +74,12 @@
     .navbar,
     .navbar-default {
         background-image: none;
-        background-color: rgba(205,105,65, 0.8);
+        /* background-color: rgba(205,105,65, 0.8); */
         border: none;
     }
 
-    .nav-tabs li a {
+    .navbar-nav li a {
         font-family: ubuntu, sans-serif;
-    }
-
-    .header h3,
-    .navbar-brand {
-        font-family: 'Calligraffitti', cursive;
-        font-size: 35px;
-        font-weight: 100;
-    }
-
-    .content{
-        margin-top: 20%;
     }
 
     .home_info {
@@ -248,28 +202,60 @@
 
 
 @media screen and (min-width:768px) {
+    .side_nav {
+        box-shadow: 0 0 3px gray, 0 0 5px gray;
+        position: fixed;
+        height: 100vh;
+        width: 20vw;
+        background: url(../images/georgy1_nav.png) no-repeat;
+        background-size: cover;
+        
+    }
+
+    .navbar-nav li {
+        border-radius: 10px 0px 0px 10px;
+        margin: 1px 0;
+    }
+
+    .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
+        background-color: white;
+    }
+
+    .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+        background-color: white;
+    }
+
+    .navbar-inverse {
+        background-color: transparent;
+    }
+    #myNavbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    #myNavbar a {
+        display: block;
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
 
     .nav>li>a{
         padding: 2px 10px;
     }
 
-    .nav-tabs li:hover,
-    .nav-tabs li:active,
-    .nav-tabs li:focus {
-        border-left: 8px rgb(128, 0, 32) solid;
-        transition: border-left .7s ease;
-    }
-
     .side_nav {
         padding-right: 0;
-        margin-left: 15px;
-        max-width: 280px;
+        
     }
-
-    .content {
-        margin-left: 25%;
-        margin-top: 20px;
-    }
+      
+      .content {
+        position: absolute;
+        right: 0px;
+        width: 75vw;
+      }
 
     .mobile {
         display: none !important;
@@ -277,7 +263,6 @@
 
     .desktop {
         display: inherit !important;
-        position: fixed;
         z-index: 200;
     }
     .intro_text {
