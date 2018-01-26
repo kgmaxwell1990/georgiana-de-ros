@@ -26,6 +26,21 @@ $(".slide-row-3").delay( 800 ).fadeIn( 1000 );
       });
     }).scroll(); //invoke scroll-handler on page-load
   
+//jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+  $(document).on('click', 'a.page-scroll', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top
+      }, 1500, 'easeInOutExpo');
+      event.preventDefault();
+  });
+});
 
+});
 
+$(document).ready(function(){
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+	});
 });
