@@ -2,7 +2,7 @@
     
     body {
         background-color: #F0EEE1;
-        padding-top: 90px;
+        padding-top: 50px;
     }
 
     h1, h2, h3 {
@@ -182,9 +182,10 @@
     .content {
         padding: 20px;
     }
-    
+
     .home_info {
         text-align: center;
+        margin-top: 50px;
     }
 
     .home_info img,
@@ -208,13 +209,7 @@
     .intro h4 {
         font-weight: 100;
     }
-
-    .intro_text > .row {
-        margin-top: 40px;
-    }
-
     .left p {
-        /* background-color: rgba(250, 250, 250, 0.4); */
         text-align: left;
         border-left: 4px rgb(128, 0, 32) solid;
         
@@ -230,12 +225,23 @@
 
     .slide-row {
         opacity: 1;
+        margin-top: 40px;
     }
 
     .slide-row-1,
     .slide-row-2,
     .slide-row-3 {
         opacity: 0;
+    }
+
+    .thanks {
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+    }
+    .thanks p {
+        border-right: 4px rgb(128, 0, 32) solid;
+        border-left: 4px rgb(128, 0, 32) solid;
     }
 
 
