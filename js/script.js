@@ -1,3 +1,5 @@
+$("a.grouped_elements").fancybox();
+
 $(window).on("load",function() {
 $(function() {
     $('.nav a').on('click', function(){ 
@@ -26,6 +28,7 @@ $(".slide-row-3").delay( 800 ).fadeIn( 1000 );
       });
     }).scroll(); //invoke scroll-handler on page-load
   
+    
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
   $(document).on('click', 'a.page-scroll', function(event) {
@@ -43,4 +46,12 @@ $(document).ready(function(){
 	$('#nav-icon').click(function(){
 		$(this).toggleClass('open');
 	});
+});
+
+var hamburger = document.querySelector(".hamburger");
+// On click
+hamburger.addEventListener("click", function() {
+  // Toggle class "is-active"
+  hamburger.classList.toggle("is-active");
+  // Do something else, like open/close menu
 });

@@ -7,11 +7,13 @@
     <title>Georgiana DeRos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu|Bungee+Inline|Megrim|Great+Vibes|Roboto|Lato|Calligraffitti" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/hamburgers.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
@@ -50,16 +52,11 @@
         <div class="mobile">
                 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
                         <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <div id="nav-icon">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                </div>
-                        </button>
+                                <button class="hamburger hamburger--spin" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                        <span class="hamburger-box">
+                                          <span class="hamburger-inner"></span>
+                                        </span>
+                                      </button>
                         <h1 class="header" href="index.html">Georgiana de Ros</h1>
                         </div>
                 
@@ -93,7 +90,8 @@
                 <div id="home">                
                         <div class="home_info">
                                 <div class="intro">
-                                                <img src="images/georgy_nav.png" alt="georgy picture" width="100px">
+                                                <a data-fancybox="georgy" class="grouped_elements" rel="georgy" href="images/georgy_nav.png"><img src="images/georgy_nav.png" alt="georgy portrait" width="100px"></a> 	
+                                                
                                         <h1>Georgiana de Ros</h1>
                                         <h4>A small collection of memorabilia and ephemera connected with
                                                 Arthur Wellesley, the first Duke of Wellington and Georgiana Lennox (de Ros)</h4>
@@ -143,7 +141,7 @@
                         </div>
                 </div> 
                 <div id="prayer_book">                
-                        <div class="home_info">
+                        <div class="info">
                                 <div class="home_info_text"></div>
                                 <h1>Wellingtons peninsular war Prayer book</h1>
 
@@ -209,31 +207,36 @@
                                         </div>
                                         
                                         
+                                <div class="row ladies">
+                                        <div class="col-sm-6 ">
+                                                <a data-fancybox="group1" class="grouped_elements" rel="group1" href="images/ladies_of.png"><img src="images/ladies_of.png" alt="ladies of Llangollen" width="100px"/></a><p>The Ladies of Llangollen
+                                                                
+                                                                Lady elinor Butler
+                                                                
+                                                                Miss Ponsonby</p>
+                                        </div>    
                                 
-                                        <div class="ladies">
-                                        <img src="images/ladies_of.png" alt="ladies of Llangollen" width="100px">
-                                        <p>The Ladies of Llangollen
+                                <div class="col-sm-6">
+                                                <a data-fancybox="group1" class="grouped_elements" rel="group1" href="images/prayer_book.png"><img src="images/prayer_book.png" alt="prayer book 1" width="100px"></a> 	
                                                 
-                                                Lady elinor Butler
-                                                
-                                                Miss Ponsonby</p>
+                                                <a data-fancybox="group1" class="grouped_elements" rel="group1" href="images/prayer_book2.png"><img src="images/prayer_book2.png" alt="prayer book 2" width="100px"/></a> 
+                                                <a data-fancybox="group1" class="grouped_elements" rel="group1" href="images/prayer_book3.png"><img src="images/prayer_book3.png" alt="prayer book 3" width="100px"/></a> 
+
+                                </div>  
                                 </div>
-                                <img src="images/prayer_book.png" alt="prayer book 1" width="100px">
-                                <img src="images/prayer_book2.png" alt="prayer book 2" width="100px">
-                                <img src="images/prayer_book3.png" alt="prayer book 3" width="100px">
                         </div>
                 </div> 
                 
                 <div id="waistcoat">                
-                        <div class=" home_info">
+                        <div class="info">
                                 
                                 <div class="home_info_text">
                                 <h1>Wellington's Waistcoat</h1>
                                 
                                 <div class="intro_text">
                                                 <div class="row slide-row slide-row-1">
-                                                        <div class="col-sm-12 left">
-                                                                <p>The Duke's waistcoat has a short note attached in Georgy's handwriting  "The Duke,s waistcoat given to me for a pattern for one I worked for him."
+                                                        <div class="col-sm-12 middle">
+                                                                <p>The Duke's waistcoat has a short note attached in Georgy's handwriting  "The Duke's waistcoat given to me for a pattern for one I worked for him."
                                                                                 
                                                                                 From the Dukes correspondence to Georgy it seems she sewed at least two waistcoats one around May  1836 and another in November 1837.
                                                                                 
@@ -245,9 +248,10 @@
                                                 </div>
                                 
                                         
-                                        
-                                <img src="images/waistcoat1.png" alt="waistcoat 1" width="100px">
-                                <img src="images/waistcoat2.png" alt="waistcoat 2" width="100px">
+                                <a data-fancybox="group2" class="grouped_elements" rel="group2" href="images/waistcoat1.png"><img src="images/waistcoat1.png" alt="waistcoat 1" width="100px"/></a> 
+                                <a data-fancybox="group2" class="grouped_elements" rel="group2" href="images/waistcoat2.png"><img src="images/waistcoat2.png" alt="waistcoat 2" width="100px"/></a> 
+
+                              
                                 </div>
                                 </div>
                         </div> 
@@ -255,13 +259,14 @@
 
                 
                 <div id="letters">                
-                        <div class=" home_info">
+                        <div class="info">
                                 
                                 <div class="home_info_text">
                                         <h1>The Wellington letters</h1>
                                         <div class="row slide-row slide-row-1">
                                                         <div class="col-sm-12 left">
-                                                                <p>This large collection of letters consisting of 140 in total are written to Georgiana Lennox   and after her marriage in 1824  to Lady de Ros.
+                                                                <p>This large collection of letters consisting of 140 in total are written to Georgiana Lennox and after her marriage in 1824  to Lady de Ros. The earliest date is 28th June 1815 and the last is 25 th march 1850. Georgiana lived to the great age of 96 and obviously cherished the memories that these letters gave to her, I don’t think she ever let them out of her possession and her Daughter Blanche did not transcribe the letters until after her death.
+                                                                        
                                                                         </p> 
                                                         </div>  
                                 
@@ -269,28 +274,15 @@
                                                 <div class="row slide-row slide-row-2">
                                 
                                                         <div class="col-sm-12 right">
-                                                                <p>The earliest date is 28th June 1815 and the last is 25 th march 1850. Georgiana lived to the great age of 96 and obviously cherished the memories that these letters gave to her, I don’t think she ever let them out of her possession and her Daughter Blanche did not transcribe the letters until after her death.
-                                                                        </p>
+                                                                <p> Georgy from a young age was immensely fond of the Duke and although the content of the letters seem very familiar for this period, there relationship was probably like that of a Father and Daughter. Sadly there are none of Georgy’s letters to the Duke that are known to exist, he was known to suggest destroying all personal correspondence, which he seems to have done, Clearly many of the Duke’s lady friends could not bring themselves to do this,
+                                                                </p>
                                                         </div>
-                                                </div>
-                                                <div class="row slide-row slide-row-3">
-                                                        <div class="col-sm-12 left">
-                                                                <p>Georgy from a young age was immensely fond of the Duke and although the content of the letters seem very familiar for this period, there relationship was probably like that of a Father and Daughter. Sadly there are none of Georgy’s letters to the Duke that are known to exist, he was known to suggest destroying all personal correspondence, which he seems to have done, Clearly many of the Duke’s lady friends could not bring themselves to do this,
-                                                                        </p>        
-                                                        </div>
-                                        
                                                 </div>
 
                                                 <div class="row slide-row">
-                                                        
-                                                        <div class="col-sm-12 right">
-                                                                <p> There are large time spans in some of the letters which is perhaps because some were destroyed or they lived close to each other and the need to correspond was less.
-                                                                        </p>                        
-                                                        </div>
-                                                </div>
-                                                <div class="row slide-row">
                                                         <div class="col-sm-12 left">
-                                                                <p> Strangely none of Georgy’s diaries are known to exist either, however Blanche did copy some of the entries and on hearing of the Duke’s death Georgy wrote: From childhood I loved and venerated him and invariably received the most un-remitting kindness from him and so many years of unclouded friendship cannot be given up without much suffering.
+                                                                <p>There are large time spans in some of the letters which is perhaps because some were destroyed or they lived close to each other and the need to correspond was less.
+                                                                        Strangely none of Georgy’s diaries are known to exist either, however Blanche did copy some of the entries and on hearing of the Duke’s death Georgy wrote: From childhood I loved and venerated him and invariably received the most un-remitting kindness from him and so many years of unclouded friendship cannot be given up without much suffering.
                                                                         </p>
                                                         </div>
                                                 
@@ -299,70 +291,46 @@
                                                 <div class="row slide-row">
                                                         
                                                         <div class="col-sm-12 right">
-                                                        <p>Georgy’s husband William Fitzgerald de Ros was burdened with the immense responsibility of organising large parts of the funeral procession of the Duke.
+                                                        <p>Georgy’s husband William Fitzgerald de Ros was burdened with the immense responsibility of organising large parts of the funeral procession of the Duke. The content of the letters are mostly of a social nature and they discuss many of the activities and tricks  which The Duke and Georgy seemed to enjoy getting up to and they certainly show a different side to the man Known as The Iron Duke.
+                                                                
                                                                 </p>     
                                                         </div>
                                                 </div>
 
                                                 <div class="row slide-row">
-                                                        <div class="col-sm-12 left">
-                                                                <p> The content of the letters are mostly of a social nature and they discuss many of the activities and tricks  which The Duke and Georgy seemed to enjoy getting up to and they certainly show a different side to the man Known as The Iron Duke.
-                                                                        </p>
-                                                        </div>
-                                                        
-                                                </div>
-
-                                                <div class="row slide-row">
                                                                 
-                                                        <div class="col-sm-12 right">
+                                                        <div class="col-sm-12 left">
                                                                 <p>[Paris Feb 1 1817 I gave a brilliant Ball on the 29th. It wanted you only to be perfect. I want you likewise for another reason. Between ourselves entirely we have been playing the finest trick ever yet performed: and it is unfortunate that so capital an actress as you should be absent on the occasion. We really quite surpassed ourselves and in the best possible way, the way which is my favourite one viz founding our scheme on a fiction invented and circulated by the person on whom the trick was played. We are not yet found out which is fortunate. As you say “it would be a pity if you or I were ever discovered as we are so very innocent”]
                                                                         </p>     
                                                                 </div>
                                                 </div>
                 
                                                 <div class="row slide-row">
-                                                        <div class="col-sm-12 left">
-                                                                <p>The Duke also seems to have taken a very keen interest in Georgy’s suitors and referred to them as the enemy.                                                              
-                                                                        </p>
-                                                        </div>
-                                                        
-                                                </div>
-                                                <div class="row slide-row">
                                                                 
                                                                 <div class="col-sm-12 right">
-                                                                <p>[Mont St Martin Nov 17th 1816 [We have had but bad hunting since you went; but the weather appears to be becoming more favourable and I hope for some sport tomorrow. I have not seen the enemy. I’ll try to get him to come over here for a day or two that I may know him a little.]        
+                                                                <p>The Duke also seems to have taken a very keen interest in Georgy’s suitors and referred to them as the enemy.                                                              
+                                                                         [Mont St Martin Nov 17th 1816 [We have had but bad hunting since you went; but the weather appears to be becoming more favourable and I hope for some sport tomorrow. I have not seen the enemy. I’ll try to get him to come over here for a day or two that I may know him a little.]
+                                                                         Which must have been quite frightening for those concerned, Lord Hotham in this case.
+                                                                         
                                                                         </p>     
                                                                 </div>
                                                 </div>
 
                                                 <div class="row slide-row">
-                                                        <div class="col-sm-12 left">
-                                                                <p>Which must have been quite frightening for those concerned, Lord Hotham in this case.
-                                                                        </p>
-                                                        </div>
-                                                        
-                                                </div>
-
-                                                <div class="row slide-row">
                                                                 
-                                                        <div class="col-sm-12 right">
+                                                        <div class="col-sm-12 left">
                                                                 <p>[Paris Jan 3rd 1817 ; I have received your letter of the 27th and I hope soon to send you some poetry notwithstanding that there is less leisure for writing here than there was at the Abbaye. I hear that a terrible accident happened to the last poem.You are a little witch! You never told me that you had bewitched my secretary! He is going about very poorly! Then there is poor Percy too very poorly for Lady Elizabeth Conynham… I did not ask the soupirant to the Abbaye as he asked to go to Bruxelles.I have a very good opinion of him and wish that you like him. I don’t approve of you waiting for the Caprice of the enemy’s guardian.]
                                                                         </p>     
                                                                 </div>
                                                 </div>
                 
-                                                <div class="row slide-row">
-                                                        <div class="col-sm-12 left">
-                                                                <p>She does seem to have had a closeness to Charles Greville the famous diarist and great friend of Henry Fitzgerald who was the elder brother of her future husband. Georgy in turn became very protective of the Duke re his affairs of the heart later in life as he was pursued by many hopeful ladies
-                                                                        </p>
-                                                        </div>
-                                                        
-                                                </div>
+                                        
 
                                                 <div class="row slide-row">
                                                                 
                                                         <div class="col-sm-12 right">
-                                                                <p> [Jan 14th 1838 you appear to be anxious about my travels in Staffordshire that I write you one line to tell you that I have evacuated that county in perfect safety! Not having seen or even heard of the enemy.]
+                                                                <p>She does seem to have had a closeness to Charles Greville the famous diarist and great friend of Henry Fitzgerald who was the elder brother of her future husband. Georgy in turn became very protective of the Duke re his affairs of the heart later in life as he was pursued by many hopeful ladies
+                                                                        [Jan 14th 1838 you appear to be anxious about my travels in Staffordshire that I write you one line to tell you that I have evacuated that county in perfect safety! Not having seen or even heard of the enemy.]
                                                                         </p>     
                                                                 </div>
                                                 </div>
@@ -372,7 +340,7 @@
                 </div>
                 
                 <div id="boars_tail">                
-                        <div class=" home_info">
+                        <div class="info">
                         
                                 <div class="home_info_text">
                                 <h1>The Boars Tail</h1>
@@ -403,49 +371,68 @@
                                 </div>  
                                         
                                         
+                                <a data-fancybox="group3" class="grouped_elements" rel="group3" href="images/boars_tail1.png"><img src="images/boars_tail1.png" alt="boars tail 1" width="100px"/></a> 
+                                <a data-fancybox="group3" class="grouped_elements" rel="group3" href="images/boars_tail2.png"><img src="images/boars_tail2.png" alt="boars tail 2" width="100px"/></a> 
+                                <a data-fancybox="group3" class="grouped_elements" rel="group3" href="images/boars_tail3.png"><img src="images/boars_tail3.png" alt="boars tail 3" width="100px"/></a> 
                                         
-                                         
-                                        <img src="images/boars_tail1.png" alt="boars tail 1" width="100px">
-                                        <img src="images/boars_tail2.png" alt="boars tail 2" width="100px">
-                                        <img src="images/boars_tail3.png" alt="boars tail 3" width="100px">
                         </div>
                 </div> 
+                </div>
                 <div id="dukes_hair">                
-                        <div class=" home_info">
+                        <div class="info">
                                 
                                 <div class="home_info_text">
                                 <h1>The Duke's Hair</h1>
-                                <p>
+                                <div class="row slide-row slide-row-2">
                                         
+                                <div class="col-sm-12 middle">
+                                        <p>
+                                                The collection consists of three lots of hair belonging to the Duke the first was sent to Georgy in a letter as shown not long after the battle of Waterloo and was very likely to have been on his head at the time of the battle and is the earliest example.
+                                                
                                         
-                                        The collection consists of three lots of hair belonging to the Duke the first was sent to Georgy in a letter as shown not long after the battle of Waterloo and was very likely to have been on his head at the time of the battle and is the earliest example.
-                                        
+                                                
+                                                The second piece has been woven into the top of a small cedar toothpick  box which has a small mirror. Inside is a note in Georgy's  hand  "Hair of Arthur The 1st Great Duke of Wellington.
+                                                
+                                                
+                                                The third piece was given to Georgy by Kendall , The Duke's  man servant ,Who after his passing immediately wrote two letters to Georgy informing her of the event, one to her london home and one to Strangford in case she was there. When they met in person shortly afterwards Kendall gave her an envelope with a small lock of the Duke's hair he is also supposed to have sent a piece to Queen Victoria.
+                                                
+                                        </p>
+                                </div>
+                                </div>
+                                <a data-fancybox="group4" class="grouped_elements" rel="group4" href="images/hair1.png"><img src="images/hair1.png" alt="dukes hair 1" width="100px"/></a> 
+                                <a data-fancybox="group4" class="grouped_elements" rel="group4" href="images/hair2.png"><img src="images/hair2.png" alt="dukes hair 2" width="100px"/></a> 
+                                <a data-fancybox="group4" class="grouped_elements" rel="group4" href="images/hair3.png"><img src="images/hair3.png" alt="dukes hair 3" width="100px"/></a> 
                                 
                                         
-                                        The second piece has been woven into the top of a small cedar toothpick  box which has a small mirror. Inside is a note in Georgy's  hand  "Hair of Arthur The 1st Great Duke of Wellington.
-                                        
-                                        
-                                        The third piece was given to Georgy by Kendall , The Duke's  man servant ,Who after his passing immediately wrote two letters to Georgy informing her of the event, one to her london home and one to Strangford in case she was there. When they met in person shortly afterwards Kendall gave her an envelope with a small lock of the Duke's hair he is also supposed to have sent a piece to Queen Victoria.</p>
-                                        <img src="images/hair1.png" alt="dukes hair 1" width="100px">
-                                        <img src="images/hair2.png" alt="dukes hair 2" width="100px">
-                                        <img src="images/hair3.png" alt="dukes hair 3" width="100px">
-                                        
+                                
+                                </div>          
                         </div>
                 </div> 
                 <div id="miguel">                
-                        <div class=" home_info">
+                        <div class="info">
                         
-                                <div class="home_info_text"></div>
+                                <div class="home_info_text">
                                 <h1>General Miguel de Alava</h1>
+                                <div class="row slide-row slide-row-2">
+                                        
+                                <div class="col-sm-12 middle">
                                 <p>General Miguel de Alava was a great friend of the Duke and was with him at waterloo he gave her this very pretty engraved mother of pearl gilt bound Diary notebook to Georgy in 1817.</p>
-                                <img src="images/miguel.png" alt="miguel" width="100px">
+                                </div>
+                                </div>
+
+                                <a data-fancybox="group5" class="grouped_elements" rel="group5" href="images/miguel.png"><img src="images/miguel.png" alt="miguel" width="100px"/></a> 
+                                </div>
+                                
                         </div>
                 </div> 
                 <div id="napoleon">                
-                        <div class=" home_info">
+                        <div class="info">
                         
-                                <div class="home_info_text"></div>
+                                <div class="home_info_text">
                                 <h1>Napoleons Anchor</h1>
+                                <div class="row slide-row slide-row-2">
+                                        
+                                <div class="col-sm-12 middle">
                                 <p>
                                                 
                                                 The attached note states.
@@ -455,60 +442,107 @@
                                                 
                                                 
                                                 The Flat bottomed boats were  a design of floating platform built for the invasion of England.How this came to the collection is uncertain as yet but possibly the Duke was presented with it  or aquired it and Georgy persuaded him to give it to her.</p>
-                                <img src="images/anchor.png" alt="napoleons anchor" width="100px">
+                                </div>
+                                </div>
+                                <a data-fancybox="group6" class="grouped_elements" rel="group6" href="images/anchor.png"><img src="images/anchor.png" alt="napoleons anchor" width="100px"/></a> 
+                                
+                                
+                                </div>
                         </div>
                 </div> 
                 <div id="portraits">                
-                        <div class=" home_info">
+                        <div class="info">
                                 <div class="home_info_text">
                                 <h1>Portraits and Prints</h1>
-                                <img src="images/wellington1.png" alt="wellington picture"width="100px">
-                                Miniature of the Duke of Wellington enamel on copper after  Sir T. Lawrence inscribed on the reverse,
-                                
-                                                                WELLINGTON
-                                
-                                                        Painted by W. Essex 1838
-                                
-                                                        Enamel painter to the queen
-                                
-                                        
-                                
-                                size 11.5 cm  X 9.6 cm
-
-                                <img src="images/wellington2.png" alt="wellington picture" width="100px">
-                                Miniature  on Ivory of the Duke of Wellington This is very simiiar to the many Rochard miniatures painted in Brussels in1815 but is unsigned and undated there is some letters on the outer edge but the history of this version is as yet unknown.
-                                
-                                <img src="images/georgy1.png" alt="georgy picture" width="100px">
-                                Miniature enamel on copper of Georgy as a young lady
-                                
-                                Artist unknown
-                                <img src="images/wellington3.png" alt="wellington picture" width="100px">
-                                The original miniature given to Georgy at the Ball on the 15th June 1815.The Image has been  kindly sent by the present Owner.
-                                <img src="images/georgy2.png" alt="georgy picture" width="100px">
-                                Pastel of Georgy aged 96  by Countess Feodora Gleichen in 1891.
-                                <img src="images/georgy3.png" alt="georgy picture" width="100px">
-                                Print of Georgy the original painting was by James Rannie Swinton a 19th century portrait artist who was married to her daughter Blanche arthur georgina de Ros
-                                <img src="images/william.png" alt="william picture" width="100px">
-                                William de Ros by Fricero
-                                <img src="images/dudley.png" alt="william picture" width="100px">
-                                Georgy's son Dudley
+                                <div class="row">
+                                        <div class="col-sm-6">
+                                                <a data-fancybox="group7" class="grouped_elements" rel="group7" href="images/wellington1.png"><img src="images/wellington1.png" alt="wellington picture"width="100px"/></a> 
+                                                        
+                                                <p>Miniature of the Duke of Wellington enamel on copper after  Sir T. Lawrence inscribed on the reverse,
+                                                
+                                                                                WELLINGTON
+                                                
+                                                                        Painted by W. Essex 1838
+                                                
+                                                                        Enamel painter to the queen
+                                                
+                                                        
+                                                
+                                                size 11.5 cm  X 9.6 cm</p>
                                         </div>
+                                        <div class="col-sm-6">
+                                                <a data-fancybox="group7" class="grouped_elements" rel="group7" href="images/wellington2.png"><img src="images/wellington2.png" alt="wellington picture" width="100px"/></a> 
+                                        
+                                                <p>Miniature  on Ivory of the Duke of Wellington This is very simiiar to the many Rochard miniatures painted in Brussels in1815 but is unsigned and undated there is some letters on the outer edge but the history of this version is as yet unknown.
+                                                        </p>
+                                        </div> 
+                                        
+                                </div>
+                                <div class="row">
+                                        <div class="col-sm-6">
+                                                <a data-fancybox="group7" class="grouped_elements" rel="group7" href="images/georgy1.png"><img src="images/georgy1.png" alt="georgy picture" width="100px"/></a> 
+                        
+                                                <p>Miniature enamel on copper of Georgy as a young lady
+                 
+                                                        Artist unknown</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                                <a data-fancybox="group7" class="grouped_elements" rel="group7" href="images/wellington3.png"><img src="images/wellington3.png" alt="wellington picture" width="100px"/></a> 
+                                                
+                                                <p>The original miniature given to Georgy at the Ball on the 15th June 1815.The Image has been  kindly sent by the present Owner.
+                                                        </p>     
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-sm-6">
+                                                <a data-fancybox="group7" class="grouped_elements" rel="group7" href="images/georgy2.png"><img src="images/georgy2.png" alt="georgy picture" width="100px"/></a> 
+                                                
+                                                <p>Pastel of Georgy aged 96  by Countess Feodora Gleichen in 1891.
+                                                        </p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                                <a data-fancybox="group7" class="grouped_elements" rel="group7" href="images/georgy3.png"><img src="images/georgy3.png" alt="georgy picture" width="100px"/></a> 
+           
+                                                <p>Print of Georgy the original painting was by James Rannie Swinton a 19th century portrait artist who was married to her daughter Blanche arthur georgina de Ros</p>
+                                                        
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-sm-6">
+                                                <a data-fancybox="group7" class="grouped_elements" rel="group7" href="images/william.png"><img src="images/william.png" alt="william picture" width="100px"/></a> 
+                                                  
+                                                <p>William de Ros by Fricero</p>
+                                        </div>
+                                        <div class="col-sm-6">
+                                                <a data-fancybox="group7" class="grouped_elements" rel="group7" href="images/dudley.png"><img src="images/dudley.png" alt="william picture" width="100px"/></a> 
+                                                    
+                                                <p>Georgy's son Dudley</p>
+                                        </div>
+                                
+                                </div>
+                                </div>
                         </div>
                 </div> 
                 <div id="silver_dishes">                
-                        <div class=" home_info">
+                        <div class="info">
                                 
                                 <div class="home_info_text"></div>
                                 <h1>Silver Entree Dishes</h1>
+                                <div class="row slide-row slide-row-2">
+                                                
+                                        <div class="col-sm-12 middle">
                                 <p>
                                                 This silver entree dishe by Robert Garrard was a wedding present from the Duke of Wellington in 1824 when Georgy at the grand old age of 29 married William Fitzgerald de Ros a young army officer</p>
-                                <img src="images/dish1.png" alt="silver dish 1" width="100px">
-                                <img src="images/dish2.png" alt="silver dish 2" width="100px">
+                                        </div>
+                                </div>
+                                <a data-fancybox="group8" class="grouped_elements" rel="group8" href="images/dish1.png"><img src="images/dish1.png" alt="silver dish 1" width="100px"/></a> 
+                                <a data-fancybox="group8" class="grouped_elements" rel="group8" href="images/dish2.png"><img src="images/dish2.png" alt="silver dish 2" width="100px"/></a> 
+                                
                         </div>
                 </div> 
                 
-                <!--<div id="scissors">                
-                        <div class=" home_info">
+                <!--<div id="ephemera">                
+                        <div class="info">
                                 
                                 <div class="home_info_text"></div>
                                 <h1>Ephemera</h1>
@@ -517,34 +551,48 @@
                         </div>
                 </div> -->
                 <div id="scissors">                
-                        <div class=" home_info">
+                        <div class="info">
                                 
                                 <div class="home_info_text"></div>
                                 <h1>The Duke's scissors</h1>
+                                <div class="row slide-row slide-row-2">
+                                                
+                                        <div class="col-sm-12 middle">
                                 <p>
                                                 After the Duke's death William de Ros was invited to Strathfield Saye by the 2nd Duke of Wellington to chose some momento from the Duke's personal belongings.He chose the scissors shown below and the note states, "always used by the great Duke and given by his son to William Lord de Ros," and are engraved with the words "Given to Lord de Ros by the present Duke from the Duke of wellingtons writing table 1852."</p>
-                                <img src="images/scissors.png" alt="scissors" width="100px">
+                                        </div>
+                                </div>
+                                <a data-fancybox="group9" class="grouped_elements" rel="group9" href="images/scissors.png"><img src="images/scissors.png" alt="scissors" width="100px"/></a> 
+                                
                         </div>
                 </div> 
                 <div id="mourning">                
-                        <div class=" home_info">
+                        <div class="info">
                                 
                                 <div class="home_info_text"></div>
                                 <h1>Mourning Pin</h1>
+                                <div class="row slide-row slide-row-2">
+                                                
+                                        <div class="col-sm-12 middle">
                                 <p>
                                                 This mourning or stick pin  shows a profile of the Duke  and is inscribed with the words "In arms invincible - in council true." It is gilt and enamelled.
                                                 
                                                 Stick pins were worn by 19th century gentlemen for fixing through their ties or cravats to keep everything neat and tidy. How this came to the collection is not clear at present, It may have been the Duke's and given to Georgiana or Georgiana maybe had it made after the Dukes Death, It is possibly a hat pin as these tended to be longer than Stick pins.</p>
-                                <img src="images/mourning.png" alt="mourning pin picture" width="100px">
+                                        </div>
+                                </div>
+                                <a data-fancybox="group10" class="grouped_elements" rel="group10" href="images/mourning.png"><img src="images/mourning.png" alt="mourning pin picture" width="100px"/></a> 
+                                
                         </div>
                 </div> 
                 <div id="sale">                
-                        <div class=" home_info">
+                        <div class="info">
                                 
                                 <div class="home_info_text"></div>
                                 <h1>Items For Sale</h1>
-                                <img src="images/for_sale1.png" alt="wellington picture"width="100px">
-                                <img src="images/for_sale2.png" alt="item for sale"width="100px">
+                                <a data-fancybox="group11" class="grouped_elements" rel="group11" href="images/for_sale1.png"><img src="images/for_sale1.png" alt="wellington picture"width="100px"/></a> 
+                                <a data-fancybox="group11" class="grouped_elements" rel="group11" href="images/for_sale2.png"><img src="images/for_sale2.png" alt="item for sale"width="100px"/></a> 
+                                
+                                <div class="middle">
                                 <p>The above is a giclee print of the miniature by William Essex 1838  the outside measurments of the frame are 10 " X 8.5" approx.
                                                 
                                                 On the reverse is a copy of a letter written to Georgy from the Duke a few weeks after the battle of Waterloo which reads  Dearest Georgy  I received your letter of the 27th and I now send you a bit of my precious hair.
@@ -553,92 +601,64 @@
                                                 
                                                 A print of a miniature of Georgy is positioned top left and the wax impression bottom right is made with a silver seal from the 14th century , Details of the seals discovery and its gift to Georgy's son Dudley make a great story written by Blanche see below.
                                                 
-                                                All Profits from the sale of the items listed here will go towards the conservation and restoration of the collection and the maintanance of the website</p>
-                                <img src="images/for_sale3.png" alt="seal picture" width="100px">
+                                                All Profits from the sale of the items listed here will go towards the conservation and restoration of the collection and the maintanance of the website <br>
+                                                Please <a href="#contact" class="page-scroll">Contact</a> us to purchase</p>
+                                        </div>
+                                <a data-fancybox="group11" class="grouped_elements" rel="group11" href="images/for_sale3.png"><img src="images/for_sale3.png" alt="seal picture"width="100px"/></a> 
+                                        
+                
                         </div>
                 </div> 
                 <div id="book">                
-                        <div class=" home_info">
+                        <div class="info">
                                 
                                 <div class="home_info_text"></div>
                                 <h1>Buy the Book</h1>
+                                <div class="middle">
                                 <p>Wellington and Georgy always maintained a lively correspondence, unfortunately Wellington destroyed all of Georgy's letters to him.
                                                 
                                                 Author Alice-Marie Crossland has piecied back together their relationship and the interesting story of Georgy's life from the fragments of their correspondence still in the de Ros family Archive.
                                                 
                                                 The book is entitled Wellington's Dearest Georgy: The life and loves of lady Georgiana Lennox</p>
-                                <a href="https://www.amazon.co.uk/Wellingtons-Dearest-Georgy-Georgiana-Lennox/dp/0993242480" target="_blank">Buy the Book from Amazon</a>
-                                <img src="images/book.jpg" alt="book" width="100px">
+                                        </div>
+
+                                <div class="book_container">
+                                        <img src="images/book.jpg" alt="book" width="100px" class="book_image">
+                                        <div class="book_middle">
+                                                <a href="https://www.amazon.co.uk/Wellingtons-Dearest-Georgy-Georgiana-Lennox/dp/0993242480" target="_blank" class="book_text">Buy The Book</a>
+                                        </div>
+                                </div>
+                                
+                               
                         </div>
                 </div> 
                 <div id="contact">                
-                        <div class=" home_info">
+                        <div class="info">
                                 
                                 <div class="home_info_text"></div>
                                 <h1>Contact Us</h1>
+                                <div class="middle">
                                 <p>Thank you for showing an interest in the website Unfortunantly due to pressures of time we might not be able to respond to all e-mails however any comments or suggested improvments will be taken on board.
                                                 
                                                 georgiana-deros@outlook.com</p>
-                                
+                                </div>
                         </div>
                 </div> 
         
+
+        </div>
+<!--<footer>
                 <div class="thanks">   
                                 <p>WITH THANKS TO: Alice-marie Crossland who kindly contributed the above article and Alice Colling who provided many of the photographs.</p>
                 </div>
-        </div>
+</footer>-->
 
             
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
-
-<div class="row slide-row slide-row-1">
-                <div class="col-sm-12 left">
-                        <p></p> 
-                </div>  
-
-</div>
-<div class="row slide-row slide-row-2">
-
-        <div class="col-sm-12 right">
-                <p></p>
-        </div>
-</div>
-<div class="row slide-row slide-row-3">
-        <div class="col-sm-12 left">
-                <p></p>        
-        </div>
-
-</div>
-
-<div class="row slide-row">
-        
-        <div class="col-sm-12 right">
-                <p> </p>                        
-        </div>
-</div>
-<div class="row slide-row">
-        <div class="col-sm-12 left">
-                <p> </p>
-        </div>
-
-</div>
-
-<div class="row slide-row">
-        
-        <div class="col-sm-12 right">
-        <p></p>     
-        </div>
-</div>
-
-<div class="row slide-row">
-        <div class="col-sm-12 left">
-                <p> </p>
-        </div>
-        
-</div>
